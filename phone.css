@@ -1,0 +1,142 @@
+@media screen and (max-width: 800px ) {
+.nav{
+    padding: 1rem 2.5rem;
+}
+
+.nav h2 {
+    display: none;
+}
+
+#item {
+    flex-direction: column;
+    width: 100%;
+    height: 120px;
+}
+#item li {
+    padding: 5px;
+    padding-right: 20px;
+}
+
+#item li a {
+    padding-bottom: 5px;
+    font-size: 13px;
+    
+}
+
+.back{
+    background-image: url(background.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+
+.mid p{
+    margin-bottom: 1.4rem;
+}
+
+.mid h2 {
+    color: white;
+    font-size: 1rem;
+}
+
+.mid .btn {
+margin-top: 1.5rem;
+}
+
+.mid .btn a {
+    text-decoration: none;
+    /* text-transform: uppercase */
+}
+
+.mid .btn a.border {
+    /* color: white; */
+    /* border: 1px solid white; */
+    font-size: 12px;
+    /* background: transparent; */
+    padding: 5px;
+    
+}
+
+/*  
+.mid .btn a.border:hover{
+    color: black;
+    background: white;
+    border: 1px solid white;
+ }  */
+
+
+.details .one {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details .one h3 {
+    font-size: 25px;
+    padding-bottom: 1.1rem;
+}
+
+.details .one h6 {
+    padding-bottom: 1.0rem;
+}
+
+.details .one p {
+    word-wrap: normal;
+     font-size: 20px;
+    padding-bottom: 1.1rem;
+}
+
+.details .one a {
+    padding: 10px;
+    margin-right: 15px;
+}
+
+/* .details .one a:hover{
+    background: orange;
+    color: black;
+} */
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details .two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    border-left: none;
+    margin-left: -75px;
+}
+
+.details .two img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+   padding-top: 20px;
+}
+
+}
+
+@media screen and (max-width: 590px ) {
+.details .two {
+    margin-top: 5px;
+    border-left: none;
+    margin-left: -60px;
+}
+.details .two img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding-top: 20px;
+}
+}
+

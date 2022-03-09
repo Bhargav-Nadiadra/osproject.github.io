@@ -63,7 +63,7 @@
         }
 
 
-        let size = 8;
+        
         let disk_size = 200;
 
         function SCAN() {
@@ -99,7 +99,7 @@
             else if (direction == "right")
                 right.push(disk_size - 1);
 
-            for (let i = 0; i < size; i++) {
+            for (let i = 0; i < arr.length + 1; i++) {
                 if (arr[i] < head)
                     left.push(arr[i]);
                 if (arr[i] > head)
@@ -164,11 +164,15 @@
         // request array
         function CHART(arr) {
 
+            console.log(arr)
+
 
             var head = document.getElementById('inputhead').value;
             var xArray = [head];
-            var yArray = [0, -1, -2, -3, -4, -5, -6, -7, -8, -9];
-            for (var i = 0; i < arr.length; i++) {
+            var yArray = arr.map((elem, i)=>-i);
+            yArray.push(-arr.length)
+            
+            for (var i = 0; i < arr.length + 1; i++) {
 
                 xArray.push(arr[i]);
 

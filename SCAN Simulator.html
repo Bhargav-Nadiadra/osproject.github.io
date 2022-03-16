@@ -18,7 +18,9 @@
     <h3>Input Array Elements</h3>
     <div class="queue">
         <label>Enter the queue : </label>
-        <input id="array" placeholder='Eg: "82 ,170 ,43 ,140 ,24 ,16 ,190"' /></br></br>
+        <input id="array" placeholder='Eg: "82 ,170 ,43 ,140 ,24 ,16 ,190"'
+        oninput="validation(event)" />
+    </br></br>
     </div>
 
     <div class="queue2">
@@ -61,6 +63,13 @@
             SCAN();
             CHART();
         }
+
+        function validation(event) {
+        let value = event.target.value;
+        if (!/^(\d+,?(,\d+,?)*)?$/.test(value)) {
+          alert("invalid input.");
+        }
+      }
 
 
         

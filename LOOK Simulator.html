@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <link rel="stylesheet" href="SIMULATOR.css">
-
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
-
 
 <body>
 <!-- Title for look -->
@@ -15,14 +12,14 @@
     <h3>Input Array Elements</h3>
     <div class="input-container">
         <label>Enter the queue : </label>
-        <input id="array" placeholder='Eg: "82 ,170 ,43 ,140 ,24 ,16 ,190"' 
-        oninput="validation(event)"/></br>
+        <input id="array" placeholder='Eg: "82 ,170 ,43 ,140 ,24 ,16 ,190"' oninput="validation(event)"/></br>
         <h6>0-199, no special character allowed except , </h6>
     </div>
 
     <!-- text field for input r/w head -->
     <div class="input-container">
-        <label class="head">Enter head : </label> <input id="inputhead" /></br>
+        <label class="head">Enter head : </label> 
+        <input id="inputhead" oninput="validation(event)"/></br>
         <h6>0-199, no special character allowed except , </h6>
     </div>
     <!-- radio button for left/right -->

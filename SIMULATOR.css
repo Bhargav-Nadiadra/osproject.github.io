@@ -8,20 +8,27 @@ h1{
 }
 
 h3{
-     color: rgb(0, 47, 90);
+    color: rgb(0, 47, 90);
     font-size: 1.8rem;
     text-align: center;
     padding-bottom: 10px;
 }
 
-.queue{
-     color: rgb(0, 47, 90);
+.input-container{
+color: rgb(0, 47, 90);
 font-size: 1.3rem;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+display: block;
+margin: auto;
+width: 22%;
 }
+
+.input-container h6{
+    color: gray;
+font-size: 0.8rem;
+ margin-top: 0px;
+ margin-left: 155px;
+ margin-bottom: 5px;
+ }
 
 #array{
    padding: 3px; 
@@ -34,15 +41,8 @@ align-items: center;
     margin-left: 27px;
 }
 #inputhead{
-    padding: 3px;
- margin-left: 14px;
-}
-
-.queue2{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+padding: 3px;
+margin-left: 19px;
 }
 
 .btn{
@@ -69,26 +69,6 @@ padding: 5px;
     font-size: 1.5rem;
     text-align: center;
 }
-
-/*
-.js-plotly-plot .plotly, .js-plotly-plot .plotly div {
-    direction: ltr;
-    font-family: "Open Sans", verdana, arial, sans-serif;
-    margin: 0px;
-    padding-left: 380px;
-}
-
-.js-plotly-plot .plotly .main-svg {
-    position: absolute;
-    top: 0px;
-    left: 100px;
-    pointer-events: none;
-}
-.js-plotly-plot .plotly .modebar-btn svg {
-    position: relative;
-    top: 8px;
-    left: 387px;
-} */
 
 .graph{
     margin-left: 400px;

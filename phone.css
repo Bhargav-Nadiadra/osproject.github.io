@@ -1,17 +1,133 @@
-@media screen and (max-width: 800px ) {
+@media screen and (max-width: 1040px) {
 .nav{
     padding: 1rem 2.5rem;
 }
 
 .nav h2 {
-    display: none;
+font-size: 1.2rem;
 }
 
-#item {
+#item li {
+    padding: 5px;
+    padding-right: 20px;
+}
+
+#item li a {
+    padding-bottom: 5px;
+    font-size: 13px;   
+}
+
+.mid h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(161, 220, 235);
+}
+
+
+.details .one h3 {
+    font-size: 1.5rem;
+}
+
+
+.details .one p {
+    font-size: 1.3rem;
+    padding-bottom: 2.1rem;
+}
+
+.details .two {
+    border-left: 0px solid black;
+    padding-left: 45px;
+    padding-top: 25px;
+}
+
+.details .two h3 {
+    font-size: 2.5rem;
+    padding-bottom: 1.1rem;
+}
+
+.details .two h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.trainer{
+    background: rgb(192, 230, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trainer .about{
+    width: 100%;
+}
+
+.trainer .about h2{
+    display: flex;
+    justify-content: center;
+}
+.trainer .about p{
+ padding-left: 30px;
+}
+
+.trainer .people{
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+
+}
+
+.trainer .people .team1{
+    width: 30%;
+    border: 1px solid black;
+}
+
+
+.trainer .people .team1 .teamdetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0px;
+}
+
+.class .classmenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.class .classmenu .team1{
+    width: 83%;
+    margin: 10px;
+}
+}
+
+
+
+@media screen and (min-width:700px)  {
+.nav{
+    /* display: flex; */
+    padding: 1rem 2.5rem;
+    /* justify-content: center; */
+}
+
+.nav h2 {
+/* display: none; */
+font-size: 1.2rem;
+}
+
+/* #item {
     flex-direction: column;
     width: 100%;
     height: 120px;
-}
+} */
+
 #item li {
     padding: 5px;
     padding-right: 20px;
@@ -23,6 +139,16 @@
     
 }
 
+.mid h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+ 
+
+}
+  
+@media screen and (max-width:540px) {
+ 
 .back{
     background-image: url(background.png);
     width: 100%;
@@ -121,8 +247,7 @@ margin-top: 1.5rem;
     align-items: center;
     width: 150px;
    padding-top: 20px;
-}
-
+}   
 }
 
 @media screen and (max-width: 590px ) {

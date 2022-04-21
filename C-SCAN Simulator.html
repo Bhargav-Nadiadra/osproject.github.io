@@ -1,3 +1,5 @@
+<!-- CSCAN algorithm -->
+<!-- // Author: Prakhar Gupta, Sheel Kumar, Bhargav , Harsh, Jay, Saumuya -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <link rel="stylesheet" href="SIMULATOR.css">
@@ -68,13 +70,12 @@
         let disk_size = 200;
 
         // fuction for CSCAN algo
-        // Time complexity for CSCAN algo will O(n) because of for loop.
+        // Time complexity for CSCAN algo will best:O(nlogn) worst:O(n^2).
         function CSCAN() {
 
             // Taking input from radio button (for left and right)
-           var type1 = document.getElementById("rd1")
+            var type1 = document.getElementById("rd1")
             var type2 = document.getElementById("rd2")
-
 
             // Taking input form text filed(as a string ) and split it by "," and add into an array
             let arr = document.getElementById("array").value.split(",").map(Number)
@@ -82,8 +83,6 @@
             // Taking user input of readWrite head
             let head = Number(document.getElementById("inputhead").value)
          
-
-
             // Defineing direction variable
             let direction
 
@@ -96,22 +95,18 @@
             if (type2.checked) 
                 direction = "right"
             
-
-
             // defining variables seekCount,distance,curruntTrack,left & rignt array, seekSeqance array
             let seek_count = 0;
             let distance, cur_track;
             let left = [], right = [];
             let seek_sequence = [];
-            let run = 2;
-
+            let run = 1;
 
             // appending end values
             // which has to be visited
             // before reversing the direction
             left.push(0);
             right.push(disk_size - 1);
-
 
             // tracks on the left of the
             // head will be serviced when
@@ -124,22 +119,18 @@
                     right.push(arr[i]);
             }
 
-
             // sorting left and right vectors
             left.sort(function (a, b) { return a - b });
             right.sort(function (a, b) { return a - b });
-
-
-            
-            while (run--) {
+       
+            while (run--> 0) {
             if (direction == "left") {
 
             // first service the requests
             // on the left side of the
             // head.
-                    for (let i = left.length - 1; i >= 0; i--) {
-                        cur_track = left[i];
-
+            for (let i = left.length - 1; i >= 0; i--) {
+                cur_track = left[i];
 
                     // appending current track to seek sequence
                     seek_sequence.push(cur_track);
@@ -159,7 +150,6 @@
                 head = 199;
                 seek_sequence.push(head)
 
-
                 // adding seek count for head returning from 0 to 199
                 seek_count += (disk_size - 1);
 
@@ -167,7 +157,6 @@
                 // which are right.
                 for (let i = right.length - 2; i >= 0; i--) {
                     cur_track = right[i];
-
 
                 // appending current track to seek sequence
                  seek_sequence.push(cur_track);
@@ -208,7 +197,6 @@
                 // adding seek count for head returning from 199 to 0
                 seek_count += (disk_size - 1);
 
- 
                     // Now service the requests again
                     // which are left.
                     for (let i = 0; i < left.length; i++) {
@@ -226,9 +214,7 @@
                         // accessed track is now the new head
                         head = cur_track;
                     }
-
                 }
-
             }
 
             document.getElementById("vv").innerHTML = "Total number of " +
@@ -236,7 +222,6 @@
                 seek_count;
 
             CHART(seek_sequence)
-
         }
 
 
